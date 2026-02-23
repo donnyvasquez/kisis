@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacki Rojas | CV Imprimible con Datos Visibles</title>
+    <title>Jacki Rojas | CV Profesional Imprimible</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Plugin para mostrar etiquetas de datos permanentemente -->
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -47,26 +46,24 @@
 </head>
 <body class="p-4 md:p-8">
 
-    <!-- Botón de impresión (oculto al imprimir) -->
+    <!-- Acciones -->
     <div class="max-w-5xl mx-auto mb-6 no-print flex justify-end gap-3 hidden">
-        <span class="text-xs text-slate-500 flex items-center italic">Versión optimizada para papel</span>
         <button onclick="window.print()" class="bg-slate-900 text-white px-6 py-2 rounded-full font-bold flex items-center gap-2 hover:bg-slate-800 transition-colors shadow-lg">
-            <i data-lucide="printer" class="w-4 h-4"></i> Imprimir CV
+            <i data-lucide="printer" class="w-4 h-4"></i> Imprimir Perfil Profesional
         </button>
     </div>
 
-    <!-- Layout principal -->
+    <!-- Layout Principal -->
     <div class="max-w-5xl mx-auto grid grid-cols-12 gap-4">
         
-        <!-- ENCABEZADO -->
+        <!-- ENCABEZADO: Identidad Profesional -->
         <div class="col-span-12 md:col-span-8 bento-card bg-slate-900 text-white">
             <div class="flex flex-col justify-between h-full">
                 <div>
-                    <span class="text-amber-500 text-xs font-bold tracking-widest uppercase mb-2 block">Perfil Profesional | ETCAR</span>
+                    <span class="text-amber-500 text-xs font-bold tracking-widest uppercase mb-2 block">Dirección Académica | ETCAR</span>
                     <h1 class="text-4xl font-bold mb-2">Jacki Rojas</h1>
                     <p class="text-slate-300 text-base leading-snug max-w-2xl">
-                        Arquitecta de procesos humanos aplicados a la conservación de monumentos históricos. 
-                        Especialista en dirección de formación técnica y salvaguarda patrimonial en Cartagena de Indias.
+                        Líder estratégica en la gestión del patrimonio y la formación técnica. Especialista en la dirección de programas de educación para el trabajo enfocados en la salvaguarda de Bienes de Interés Cultural (BIC) en Cartagena de Indias.
                     </p>
                 </div>
             </div>
@@ -74,7 +71,7 @@
 
         <!-- CONTACTO -->
         <div class="col-span-12 md:col-span-4 bento-card border-2 border-slate-100">
-            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Información de Contacto</h3>
+            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Contacto Institucional</h3>
             <div class="space-y-3">
                 <div class="flex items-center text-sm">
                     <i data-lucide="mail" class="text-amber-600 w-4 h-4 mr-3"></i>
@@ -82,7 +79,7 @@
                 </div>
                 <div class="flex items-center text-sm">
                     <i data-lucide="map-pin" class="text-amber-600 w-4 h-4 mr-3"></i>
-                    <span class="font-medium">Cartagena de Indias, CO</span>
+                    <span class="font-medium">Centro, Baluarte Sta. Catalina</span>
                 </div>
                 <div class="flex items-center text-sm">
                     <i data-lucide="globe" class="text-amber-600 w-4 h-4 mr-3"></i>
@@ -91,77 +88,91 @@
             </div>
         </div>
 
-        <!-- MÉTRICA CLAVE -->
-        <div class="col-span-12 md:col-span-4 bento-card bg-amber-500 border-none items-center justify-center text-center py-8">
-            <h4 class="text-amber-900 font-bold uppercase text-[10px] tracking-widest mb-1">Impacto de Gestión</h4>
-            <div class="text-6xl font-black text-amber-950">+85%</div>
-            <p class="text-amber-900 font-bold text-xs uppercase">Empleabilidad Egresados</p>
-        </div>
-
-        <!-- PILARES TÉCNICOS -->
+        <!-- TRAYECTORIA Y EXPERIENCIA DETALLADA -->
         <div class="col-span-12 md:col-span-8 bento-card">
-            <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
-                <i data-lucide="hammer" class="text-amber-600 w-5 h-5"></i> Pilares de Formación Técnica
+            <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                <i data-lucide="briefcase" class="text-amber-600 w-5 h-5"></i> Trayectoria en Gestión de Patrimonio
             </h3>
-            <div class="grid grid-cols-3 gap-3">
-                <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center">
-                    <h4 class="font-bold text-xs text-slate-900">Albañilería</h4>
-                    <p class="text-[10px] text-slate-500">Restauración de muros</p>
-                </div>
-                <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center">
-                    <h4 class="font-bold text-xs text-slate-900">Carpintería</h4>
-                    <p class="text-[10px] text-slate-500">Bienes coloniales</p>
-                </div>
-                <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center">
-                    <h4 class="font-bold text-xs text-slate-900">Forja y Soldadura</h4>
-                    <p class="text-[10px] text-slate-500">Metales históricos</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- TRAYECTORIA -->
-        <div class="col-span-12 md:col-span-8 bento-card">
-            <h3 class="text-xl font-bold mb-6">Experiencia Estratégica</h3>
             <div class="space-y-8">
                 <div class="relative pl-6 border-l-2 border-amber-500">
                     <div class="absolute w-3 h-3 bg-amber-500 rounded-full -left-[7px] top-1"></div>
                     <div class="flex justify-between items-start mb-1">
-                        <h4 class="font-bold text-base">Dirección de Formación | ETCAR</h4>
-                        <span class="text-[10px] font-bold bg-slate-100 px-2 py-0.5 rounded">2018 - Hoy</span>
+                        <h4 class="font-bold text-base">Directora Académica</h4>
+                        <span class="text-[10px] font-bold bg-slate-100 px-2 py-0.5 rounded uppercase">Escuela Taller Cartagena de Indias</span>
                     </div>
-                    <p class="text-slate-600 text-xs">Liderazgo de programas técnicos y gestión de becas. Coordinación del modelo pedagógico "Aprender Haciendo".</p>
+                    <p class="text-slate-600 text-xs mb-2 italic">2018 - Actualidad</p>
+                    <ul class="text-slate-600 text-xs space-y-1">
+                        <li>• Coordinación de programas acreditados en calidad técnica por el Ministerio de Educación.</li>
+                        <li>• Supervisión de procesos de restauración directa en el Cordón Amurallado de Cartagena.</li>
+                        <li>• Gestión de convenios de cooperación internacional para el fortalecimiento de oficios.</li>
+                    </ul>
                 </div>
 
                 <div class="relative pl-6 border-l-2 border-slate-200">
                     <div class="absolute w-3 h-3 bg-slate-200 rounded-full -left-[7px] top-1"></div>
                     <div class="flex justify-between items-start mb-1">
-                        <h4 class="font-bold text-base">Salvaguarda del Patrimonio</h4>
-                        <span class="text-[10px] font-bold bg-slate-100 px-2 py-0.5 rounded">Gestión Técnica</span>
+                        <h4 class="font-bold text-base">Líder de Inclusión y Formación Técnica</h4>
+                        <span class="text-[10px] font-bold bg-slate-100 px-2 py-0.5 rounded uppercase">Proyectos Territoriales</span>
                     </div>
-                    <p class="text-slate-600 text-xs">Articulación técnica con el Ministerio de Cultura para la protección de las fortificaciones de Cartagena.</p>
+                    <p class="text-slate-600 text-xs mb-2 italic">Gestión de Impacto Social</p>
+                    <p class="text-slate-600 text-xs">Diseño de estrategias pedagógicas para la vinculación de poblaciones en riesgo al cuidado del patrimonio monumental.</p>
                 </div>
             </div>
         </div>
 
-        <!-- GRÁFICO DE CRECIMIENTO CON DATOS ESTÁTICOS -->
+        <!-- RECONOCIMIENTOS / LOGROS -->
         <div class="col-span-12 md:col-span-4 bento-card bg-slate-50 border-none">
-            <h3 class="text-sm font-bold mb-1">Evolución de Becas</h3>
-            <p class="text-[10px] text-slate-500 mb-2">Estudiantes beneficiados por año</p>
+            <h3 class="text-sm font-bold mb-4 uppercase tracking-widest text-slate-500">Reconocimientos</h3>
+            <div class="space-y-4">
+                <div class="flex gap-3">
+                    <i data-lucide="award" class="text-amber-600 w-5 h-5 shrink-0"></i>
+                    <div>
+                        <h4 class="text-xs font-bold">Acreditación de Calidad</h4>
+                        <p class="text-[10px] text-slate-500">Logro en certificación técnica institucional.</p>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <i data-lucide="users" class="text-amber-600 w-5 h-5 shrink-0"></i>
+                    <div>
+                        <h4 class="text-xs font-bold">Referente Nacional</h4>
+                        <p class="text-[10px] text-slate-500">Liderazgo en la red nacional de Escuelas Taller.</p>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <i data-lucide="shield-check" class="text-amber-600 w-5 h-5 shrink-0"></i>
+                    <div>
+                        <h4 class="text-xs font-bold">Gestión TIC en Patrimonio</h4>
+                        <p class="text-[10px] text-slate-500">Implementación de sistemas de seguimiento académico.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MÉTRICA DE IMPACTO -->
+        <div class="col-span-12 md:col-span-4 bento-card bg-amber-500 border-none items-center justify-center text-center py-6">
+            <h4 class="text-amber-900 font-bold uppercase text-[10px] tracking-widest mb-1">Empleabilidad</h4>
+            <div class="text-6xl font-black text-amber-950">+85%</div>
+            <p class="text-amber-900 font-bold text-xs uppercase">Egresados Vinculados</p>
+        </div>
+
+        <!-- GRÁFICO DE CRECIMIENTO: DATOS VISIBLES -->
+        <div class="col-span-12 md:col-span-8 bento-card">
+            <div class="flex justify-between items-center mb-2">
+                <h3 class="text-sm font-bold">Evolución de Becas y Matrículas</h3>
+                <span class="text-[10px] font-bold text-slate-400">Total Beneficiarios Anuales</span>
+            </div>
             <div class="chart-container">
                 <canvas id="impactLine"></canvas>
-            </div>
-            <div class="mt-4 flex justify-between items-end border-t border-slate-200 pt-3">
-                <div class="text-[10px] font-bold text-slate-400 uppercase leading-tight">Crecimiento<br>Anual</div>
-                <div class="text-amber-700 font-bold text-lg">Sostenible</div>
             </div>
         </div>
 
         <!-- PIE DE PÁGINA -->
         <div class="col-span-12 py-4 border-t border-slate-100 flex justify-between items-center">
-            <p class="text-[9px] text-slate-400 font-bold uppercase tracking-widest">Jacki Rojas — Escuela Taller Cartagena de Indias — Perfil 2024</p>
-            <div class="flex gap-4">
-                <i data-lucide="check-circle" class="w-3 h-3 text-slate-300"></i>
-                <i data-lucide="award" class="w-3 h-3 text-slate-300"></i>
+            <p class="text-[9px] text-slate-400 font-bold uppercase tracking-widest">Jacki Rojas — Perfil Directivo — Escuela Taller Cartagena de Indias — 2024</p>
+            <div class="flex gap-2">
+                <span class="w-2 h-2 rounded-full bg-slate-200"></span>
+                <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                <span class="w-2 h-2 rounded-full bg-slate-900"></span>
             </div>
         </div>
 
@@ -170,8 +181,6 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             lucide.createIcons();
-
-            // Registrar el plugin de etiquetas de datos
             Chart.register(ChartDataLabels);
 
             const ctxLine = document.getElementById('impactLine').getContext('2d');
@@ -193,39 +202,25 @@
                 },
                 options: {
                     maintainAspectRatio: false,
-                    layout: {
-                        padding: {
-                            top: 30, // Espacio extra para que la etiqueta de 380 no se corte
-                            right: 15
-                        }
-                    },
+                    layout: { padding: { top: 30, right: 20, left: 20 } },
                     scales: {
                         x: { 
                             display: true,
                             ticks: { font: { size: 10, weight: '600' }, color: '#475569' },
                             grid: { display: false }
                         },
-                        y: { 
-                            display: false, // Ocultamos el eje Y para limpiar el diseño ya que los datos están sobre los puntos
-                            grid: { display: false }
-                        }
+                        y: { display: false }
                     },
                     plugins: { 
                         legend: { display: false },
-                        tooltip: { enabled: false }, // Desactivamos el tooltip ya que los datos son estáticos
+                        tooltip: { enabled: false },
                         datalabels: {
                             display: true,
                             align: 'top',
-                            offset: 8,
+                            offset: 10,
                             color: '#0f172a',
-                            font: {
-                                family: "'Space Grotesk'",
-                                size: 12,
-                                weight: 'bold'
-                            },
-                            formatter: function(value) {
-                                return value; // Muestra el número puro (ej. 150)
-                            }
+                            font: { family: "'Space Grotesk'", size: 13, weight: 'bold' },
+                            formatter: (val) => val
                         }
                     }
                 }
