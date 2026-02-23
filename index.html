@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Kisis Ramírez Delgado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #fcfcfc; color: #2d2d2d; }
+        h1, h2, .serif { font-family: 'Playfair Display', serif; }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            height: 350px;
+        }
+        .timeline-dot {
+            width: 12px;
+            height: 12px;
+            background-color: #be123c;
+            border-radius: 50%;
+            position: absolute;
+            left: -6px;
+            top: 8px;
+        }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Hero -->
+    <header class="bg-white border-b border-stone-100 py-16 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-stone-900 mb-4">Kisis Ramírez Delgado</h1>
+            <p class="text-rose-700 font-semibold tracking-[0.2em] uppercase text-sm mb-6">Gestora Cultural | Directora en Matria Corporación Cultural</p>
+            <div class="h-1 w-20 bg-rose-700 mx-auto mb-8"></div>
+            <p class="max-w-2xl mx-auto text-lg text-stone-600 leading-relaxed">
+                Especialista en transformar realidades territoriales a través del arte y la gestión comunitaria. 
+                Con más de 15 años de experiencia liderando procesos de paz, formación y salvaguarda del patrimonio en la región Caribe.
+            </p>
+        </div>
+    </header>
+
+    <!-- Secciones Continuas -->
+    <main class="max-w-5xl mx-auto px-4 py-12 space-y-24">
+
+        <!-- Perfil y Competencias -->
+        <section>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 flex items-center">
+                        <span class="mr-3 text-rose-700">01.</span> Perfil Estratégico
+                    </h2>
+                    <p class="text-stone-600 mb-6 leading-relaxed">
+                        Mi enfoque combina la rigurosidad administrativa con la sensibilidad artística. Poseo una capacidad probada para articular actores públicos y privados, garantizando la sostenibilidad de proyectos culturales de alto impacto social.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-3 bg-white shadow-sm border border-stone-100 rounded-lg">
+                            <span class="text-2xl mr-4">🤝</span>
+                            <div>
+                                <h4 class="font-bold text-sm">Liderazgo Comunitario</h4>
+                                <p class="text-xs text-stone-500">Tejido social y resolución de conflictos.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-3 bg-white shadow-sm border border-stone-100 rounded-lg">
+                            <span class="text-2xl mr-4">📊</span>
+                            <div>
+                                <h4 class="font-bold text-sm">Gestión de Proyectos</h4>
+                                <p class="text-xs text-stone-500">Formulación y ejecución presupuestaria.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-100">
+                    <h3 class="text-center text-xs font-bold uppercase tracking-widest text-stone-400 mb-4">Análisis de Competencias</h3>
+                    <div class="chart-container">
+                        <canvas id="skillsChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trayectoria Profesional -->
+        <section>
+            <h2 class="text-3xl font-bold mb-10 flex items-center">
+                <span class="mr-3 text-rose-700">02.</span> Experiencia y Formación
+            </h2>
+            <div class="relative border-l-2 border-stone-200 ml-3 pl-8 space-y-12">
+                
+                <!-- Item 1 -->
+                <div class="relative">
+                    <div class="timeline-dot"></div>
+                    <span class="text-rose-700 font-bold text-sm">2018 — Actualidad</span>
+                    <h3 class="text-xl font-bold text-stone-900">Directora General</h3>
+                    <p class="text-stone-500 font-medium mb-3">Matria Corporación Cultural</p>
+                    <ul class="text-stone-600 text-sm space-y-2 max-w-2xl">
+                        <li>• Coordinación estratégica de programas de alto impacto regional como "Escuela de Paz".</li>
+                        <li>• Representación institucional ante entes gubernamentales y organismos de cooperación.</li>
+                        <li>• Gestión de recursos y sostenibilidad financiera de la corporación.</li>
+                    </ul>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="relative">
+                    <div class="timeline-dot"></div>
+                    <span class="text-rose-700 font-bold text-sm">2021 — 2023</span>
+                    <h3 class="text-xl font-bold text-stone-900">Maestría en Gestión Cultural</h3>
+                    <p class="text-stone-500 font-medium mb-2">Universidad de Antioquia</p>
+                    <p class="text-stone-600 text-sm">Especialización en políticas culturales y desarrollo territorial sustentable.</p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="relative">
+                    <div class="timeline-dot"></div>
+                    <span class="text-rose-700 font-bold text-sm">2015 — 2018</span>
+                    <h3 class="text-xl font-bold text-stone-900">Coordinadora de Proyectos</h3>
+                    <p class="text-stone-500 font-medium mb-3">Fundación Arte & Sociedad</p>
+                    <p class="text-stone-600 text-sm italic">Liderazgo de procesos pedagógicos en comunidades vulnerables y gestión de festivales locales.</p>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="relative">
+                    <div class="timeline-dot"></div>
+                    <span class="text-rose-700 font-bold text-sm">2014</span>
+                    <h3 class="text-xl font-bold text-stone-900">Licenciatura en Artes Escénicas</h3>
+                    <p class="text-stone-500 font-medium mb-2">Universidad del Atlántico</p>
+                    <p class="text-stone-600 text-sm">Formación en pedagogía del arte y expresión creativa como motor social.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Proyectos e Impacto -->
+        <section>
+            <h2 class="text-3xl font-bold mb-10 flex items-center">
+                <span class="mr-3 text-rose-700">03.</span> Impacto y Logros
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="p-6 bg-white border border-stone-100 rounded-xl card-hover">
+                    <div class="text-3xl mb-3">🏛️</div>
+                    <h4 class="font-bold mb-2">Festival de la Memoria</h4>
+                    <p class="text-xs text-stone-500 italic">Gestión cultural y rescate patrimonial en Bolívar.</p>
+                </div>
+                <div class="p-6 bg-white border border-stone-100 rounded-xl card-hover">
+                    <div class="text-3xl mb-3">🕊️</div>
+                    <h4 class="font-bold mb-2">Escuela de Paz</h4>
+                    <p class="text-xs text-stone-500 italic">Formación de más de 200 jóvenes líderes en arte.</p>
+                </div>
+                <div class="p-6 bg-white border border-stone-100 rounded-xl card-hover">
+                    <div class="text-3xl mb-3">🗺️</div>
+                    <h4 class="font-bold mb-2">Cartografía Social</h4>
+                    <p class="text-xs text-stone-500 italic">Investigación de activos culturales territoriales.</p>
+                </div>
+            </div>
+
+            <div class="bg-stone-900 text-white p-8 rounded-2xl flex flex-col md:flex-row items-center justify-between">
+                <div class="mb-6 md:mb-0 md:mr-8 text-center md:text-left">
+                    <h3 class="text-2xl font-bold mb-2">Crecimiento en Cifras</h3>
+                    <p class="text-stone-400 text-sm max-w-md">Evolución de beneficiarios directos e indirectos bajo la gestión de Matria Corporación Cultural en los últimos 5 años.</p>
+                </div>
+                <div class="w-full md:w-1/2 h-48">
+                    <canvas id="miniImpactChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer / Contacto -->
+    <footer class="bg-white border-t border-stone-100 py-16">
+        <div class="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Contacto Directo</h2>
+                <div class="space-y-4 text-stone-600">
+                    <p class="flex items-center"><span class="mr-3 opacity-60">📍</span> Bolívar, Colombia</p>
+                    <p class="flex items-center"><span class="mr-3 opacity-60">✉️</span> kisis.ramirez@matriacultura.org</p>
+                    <p class="flex items-center"><span class="mr-3 opacity-60">💼</span> linkedin.com/in/kisisramirez</p>
+                </div>
+            </div>
+            <div class="bg-rose-50 p-8 rounded-2xl flex items-center justify-center">
+                <blockquote class="text-center italic text-stone-700">
+                    "Creo en el arte no solo como estética, sino como el puente necesario para reconstruir nuestra identidad colectiva."
+                </blockquote>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Skill Radar Chart
+            const ctxSkills = document.getElementById('skillsChart').getContext('2d');
+            new Chart(ctxSkills, {
+                type: 'radar',
+                data: {
+                    labels: ['Gestión', 'Liderazgo', 'Formación', 'Relaciones Públicas', 'Investigación', 'Curaduría'],
+                    datasets: [{
+                        label: 'Dominio Profesional',
+                        data: [95, 90, 88, 85, 80, 82],
+                        backgroundColor: 'rgba(190, 18, 60, 0.1)',
+                        borderColor: '#be123c',
+                        borderWidth: 2,
+                        pointBackgroundColor: '#be123c'
+                    }]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            angleLines: { color: '#f3f4f6' },
+                            grid: { color: '#f3f4f6' },
+                            suggestedMin: 50,
+                            ticks: { display: false }
+                        }
+                    },
+                    plugins: { legend: { display: false } }
+                }
+            });
+
+            // Mini Impact Chart
+            const ctxImpact = document.getElementById('miniImpactChart').getContext('2d');
+            new Chart(ctxImpact, {
+                type: 'line',
+                data: {
+                    labels: ['2019', '2020', '2021', '2022', '2023'],
+                    datasets: [{
+                        label: 'Beneficiarios',
+                        data: [1200, 1500, 2200, 3100, 4500],
+                        borderColor: '#fb7185', // rose-400
+                        backgroundColor: 'rgba(251, 113, 133, 0.15)', // rose-400 con transparencia
+                        borderWidth: 3,
+                        tension: 0.4,
+                        fill: true,
+                        pointRadius: 4,
+                        pointBackgroundColor: '#fb7185',
+                        pointHoverRadius: 6
+                    }]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: { 
+                            display: true, 
+                            ticks: { color: '#d6d3d1' }, 
+                            grid: { display: false } 
+                        },
+                        y: { 
+                            display: true,
+                            ticks: { color: '#d6d3d1' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)', borderDash: [4, 4] }
+                        }
+                    },
+                    plugins: { 
+                        legend: { display: false },
+                        tooltip: {
+                            backgroundColor: 'rgba(28, 25, 23, 0.9)', // stone-900
+                            titleColor: '#fb7185',
+                            bodyColor: '#ffffff',
+                            padding: 10,
+                            callbacks: {
+                                label: function(context) {
+                                    return context.parsed.y + ' beneficiarios';
+                                }
+                            }
+                        }
+                    },
+                    interaction: {
+                        intersect: false,
+                        mode: 'index',
+                    }
+                }
+            });
+        });
+    </script>
+
+    <!-- Chosen Palette: "Rose & Stone" - Neutros elegantes con acentos Rose (Rosa intenso) para transmitir pasión y profesionalismo cultural. -->
+    
+    <!-- Application Structure Plan: 
+         - Una sola página continua sin navegación superior compleja para facilitar la lectura.
+         - Secciones numeradas (01, 02, 03) para dar sentido de orden.
+         - Combinación de datos cuantitativos (gráficos) con cualitativos (experiencia detallada).
+         - Diseño responsive que funciona perfectamente en móvil como una tarjeta de presentación digital extendida.
+    -->
+
+    <!-- Visualization & Content Choices:
+         - Radar Chart: Para mostrar rápidamente el equilibrio de habilidades directivas y creativas.
+         - Timeline Vertical: Estándar de CV para fácil escaneo cronológico.
+         - Line Chart Minimal: En el footer oscuro para mostrar impacto acumulado de forma elegante.
+    -->
+
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+
+</body>
+</html>
